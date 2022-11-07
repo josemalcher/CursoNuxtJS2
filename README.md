@@ -30,6 +30,15 @@ https://www.youtube.com/playlist?list=PLcoYAcR89n-oU266D5Dy6DT-H8npny_qJ
 
 ## <a name="parte1">1 - Introdução e instalação</a>
 
+- https://nuxtjs.org/pt/docs/get-started/installation
+
+```
+$ node -v
+v16.18.1
+
+
+
+```
 
 
 [Voltar ao Índice](#indice)
