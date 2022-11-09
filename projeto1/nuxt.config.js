@@ -3,12 +3,12 @@ export default {
   head: {
     title: 'projeto1',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt-br'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Projeto te teste - Minha descrição ' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

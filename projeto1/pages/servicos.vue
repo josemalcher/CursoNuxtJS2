@@ -37,9 +37,21 @@ export default {
   // middleware() {
   //   console.log('middleware SERVICOS ATIVADO...')
   // },
+  head(){
+    return {
+      title: this.title,
+      meta: [
+        {hid: 'description', name: 'description', content: 'Projeto te teste - Página de Serviços' }
+      ],
+      bodyAttrs:{
+        class: 'bg-gray-400'
+      }
+    }
+  },
   data() {
     return {
-      services: []
+      services: [],
+      title: ''
     }
   },
   async fetch() {
@@ -50,7 +62,18 @@ export default {
     // })
     // console.log(this)
     this.services = await this.$axios.$get('https://jsonplaceholder.typicode.com/users')
+  },
+  created() {
+    this.getTitle()
+  },
+  methods:{
+    getTitle(){
+      setTimeout(()=>{
+        this.title = 'Serviços'
+      }, 3000)
+    }
   }
+
 }
 </script>
 
