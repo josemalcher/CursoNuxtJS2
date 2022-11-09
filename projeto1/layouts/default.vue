@@ -15,7 +15,10 @@
 
 <script>
 export default {
-  name: "default"
+  name: "default",
+  // middleware() {
+  //   console.log('middleware LAYOUT DEFAULT ATIVADO...')
+  // }
 }
 </script>
 

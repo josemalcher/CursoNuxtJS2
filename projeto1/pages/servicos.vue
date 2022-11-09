@@ -16,7 +16,10 @@
 
 <script>
 export default {
-  name: "servicos"
+  name: "servicos",
+  middleware() {
+    console.log('middleware SERVICOS ATIVADO...')
+  }
 }
 </script>
 
