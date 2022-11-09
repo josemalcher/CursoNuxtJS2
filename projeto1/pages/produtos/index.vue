@@ -7,6 +7,13 @@
           <NuxtLink to="/produtos/produto-a">PRODUTO A</NuxtLink>
           <NuxtLink to="/produtos/produto-b">PRODUTO A</NuxtLink>
         </div>
+        <div v-for="product in products" :key="product.id" class="border-b border-gray-400 py-3">
+          {{ product.title }}
+        </div>
+        <!--        <pre>-->
+        <!--            {{ products }}-->
+        <!--          </pre>-->
+
       </div>
     </div>
   </div>
@@ -14,7 +21,27 @@
 
 <script>
 export default {
-  name: "produtos"
+  name: "produtos",
+  data() {
+
+
+  },
+  async asyncData({$axios}) {
+    //  await new Promise((resolve)=>{
+    //   setTimeout(()=>{
+    //     resolve()
+    //     console.log('PROMISE RESOLVIDA')
+    //   }, 3000)
+    // })
+    const products = await $axios.$get('https://jsonplaceholder.typicode.com/posts')
+    // return{
+    //   products: [
+    //     {name: 'produto-a'},
+    //     {name: 'produto-b'}
+    //   ]
+    // }
+    return {products}
+  }
 }
 </script>
 
