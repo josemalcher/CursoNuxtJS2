@@ -129,7 +129,8 @@ v16.18.1
 
 ## <a name="parte11">11 - Plugins</a>
 
-
+- https://day.js.org/
+- https://v-tooltip.netlify.app/
 
 [Voltar ao Índice](#indice)
 
