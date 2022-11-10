@@ -157,7 +157,7 @@ v16.18.1
 
 ## <a name="parte14">14 - Nuxt e Axios</a>
 
-
+- https://axios.nuxtjs.org/extend
 
 [Voltar ao Índice](#indice)
 

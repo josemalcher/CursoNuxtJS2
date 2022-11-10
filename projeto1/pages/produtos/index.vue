@@ -33,7 +33,7 @@ export default {
     //     console.log('PROMISE RESOLVIDA')
     //   }, 3000)
     // })
-    const products = await $axios.$get('https://jsonplaceholder.typicode.com/posts')
+    const products = await $axios.$get('posts')
     // return{
     //   products: [
     //     {name: 'produto-a'},
