@@ -16,6 +16,13 @@ export default {
     ]
   },
 
+  publicRuntimeConfig:{
+    youyube_api: process.env.YOUTUBE_PUBLIC_API
+  },
+  privateRuntimeConfig:{
+    facebook_API: process.env.FACEBOOK_PRIVATE_API
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
