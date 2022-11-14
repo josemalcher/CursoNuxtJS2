@@ -1,4 +1,4 @@
-# projetopratico1
+# nuxt
 
 ## Build Setup
 
